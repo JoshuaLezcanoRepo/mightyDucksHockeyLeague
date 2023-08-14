@@ -8,7 +8,8 @@ _Tarea Propuesta por Mind-Hub._
 ![preview_contact](https://github.com/JoshuaLezcanoRepo/mightyDucksHockeyLeague/assets/96133436/676b5898-f137-43da-bfd0-ecf1dc6fd171)
 
 ---------------------------------------
-- Tarea 2
+# Tarea 2
+
 1er Diseño
 
 ![image](https://github.com/JoshuaLezcanoRepo/mightyDucksHockeyLeague/assets/96133436/36a06635-1cb9-4e6e-9b87-9f24940fe399)
