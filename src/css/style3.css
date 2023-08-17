@@ -1,143 +1,394 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap');
+
 /* Base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    letter-spacing: -0.5px;
 }
 
-main {
-    min-height: 100vh;
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    padding: 10px;
+}
+
+h1,
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 95px;
+    letter-spacing: -1px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    font-style: normal;
+}
+
+li {
+    padding: 15px;
+}
+
+/* -- Header -- */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #121212f1;
+    backdrop-filter: blur(3px);
+}
+
+.nav_container {
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 65px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav_list {
+    column-gap: 25px;
+}
+
+.nav {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.nav_link {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    color: #fff;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.nav_link_game {
+    font-size: 19px;
+    color: #fff;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.nav_link:hover,
+.nav_link_game:hover,
+.active,
+.about_title,
+.about_subtitle,
+.mv_subtitle,
+.rules_title,
+.rules_subtitle {
+    color: #F7B62A;
+}
+
+.nav_container,
+.nav_list,
+.hero_container,
+.event_container,
+.about_container,
+.contact_container,
+.rules_container,
+.social_container,
+.contact2,
+.data_rules,
+.game_info,
+.nav_link {
     display: flex;
+}
+
+
+.hero_container,
+.about_container,
+.event_container,
+.contact_container,
+.rules_container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.containerGral {
-    margin-top: 30px;
+/* -- Hero -- */
+.hero_container {
+    height: 750px;
+    background-image: linear-gradient(to top, #52006bf8, #131313c5), url('https://contently.com/wp-content/uploads/2015/03/mighty-ducks.jpg');
+    padding: 80px;
 }
 
-/* Image */
-.img-Hock {
-    content: url('/src/images/hockD2.jpg');
-    display: grid;
-    height: 200px;
-    border-radius: 15px;
-    object-fit: cover;
-    border-start-start-radius: 15px;
-    border-start-end-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+/* -- About -- */
+.about_container {
+    padding: 90px;
+    background-image: linear-gradient(to bottom, #52006bf8, #430058e3), url('https://cms.nhl.bamgrid.com/images/photos/316441718/1920x1080/cut.jpg');
 }
 
-.containerGral, .img-Hock {
-    width: 800px;
-}
-
-.container-2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
- /* NavList */
-.nav-list {
-    display: grid;
-}
-
-.container-3 {
-    width: 500px;
-    padding: 30px;
-    margin-left: 30px;
-}
-
-.container-4 {
-    position: relative;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-
-/* Title */
-h1 {
-    color: #000;
-    padding: 5px;
-    font-size: 30px;
-}
-
-/* Subtitle */
-h2 {
-    padding: 15px;
-}
-
-h1, h2 {
-    text-align: center;
-}
-
-/* Logo */
-.imgIndex, .imgContact, .imgAbout {
-    width: 100px;
-    position: absolute;
-    background-color: #000;
-    border-radius: 20px;
-    right: -40px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-
-.imgIndex {
-    bottom: 350px;
-}
-
-.imgContact {
-    bottom: 285px;
-}
-
-.imgAbout {
-    bottom: 500px;
-}
-
-p {
+.about_title {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 55px;
+    letter-spacing: 1px;
 }
 
-li {
-    font-size: 18px;
-    padding-bottom: 25px;
-}
-
-/* Links */
-a {
-    text-decoration: none;
-    font-size: 20px;
-    text-align: center;
-}
-
-.nav-link:link {
-    color: #fff;
-}
-
-.nav-link:visited {
-    color: #575757;
-}
-
-.nav-link:hover {
-    color: #000;
-}
-
-.active {
-    color: #fff;
+.about_subtitle,
+.mv_subtitle {
     font-weight: 600;
-    background-color: #252525;
+    font-size: 25px;
+    letter-spacing: -1px;
+    padding-top: 35px;
+    padding-bottom: 15px;
 }
 
-.nav-link {
-    background-color: #cccccc;
+/* -- Events -- */
+.event_container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-image: linear-gradient(to bottom, #1212128a, #1212128a), url('/src/images/event.png');
+    text-align: center;
+    color: #ffffff;
 }
 
-.active, .nav-link {
-    margin: 3px;
-    padding: 10px;
-    border: 2px solid #000;
-    border-radius: 10px;
+.event_container li {
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-style: italic;
+    padding: 15px;
+    list-style-type: none;
+}
+
+.event_title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 500;
+    font-size: 55px;
+    letter-spacing: 1px;
+}
+
+.title_list {
+    font-weight: 600;
+}
+
+/* -- Contact -- */
+.contact_container {
+    background-color: #090909;
+    padding: 90px;
+    color: #fff;
+}
+
+.social_container {
+    flex-direction: row;
+    justify-items: center;
+}
+
+.logo {
+    width: 75px;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: -0.5px;
+}
+
+.footer_title {
+    font-size: 20px;
+    display: block;
+}
+
+.footer_subtitle {
+    font-size: 18px;
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+    background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #454545;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #F7B62A;
+}
+
+/* Button */
+.button {
+    align-items: center;
+    background-color: #121212;
+    border: 2px solid #9800c7;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    border-radius: 5px;
+}
+
+button:focus {
+    color: #171e29;
+}
+
+button:hover,
+button:active {
+    background-color: #3385ff;
+    border-color: #3385ff;
+    fill: #06f;
+}
+
+/* Table */
+th,
+td,
+tr {
+    padding: 15px;
+    text-align: start;
+}
+
+table {
+    padding-top: 25px;
+    padding-bottom: 75px;
+}
+
+thead th {
+    width: 25%;
+}
+
+/* Game Info Page */
+.contact p {
+    padding: 20px;
+}
+
+.contact2 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Rules Page */
+.rules_content>li::marker {
+    visibility: hidden;
+    font-weight: bold;
+}
+
+.rules_content,
+.rules_content2 {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    font-style: normal;
+    text-align: justify;
+}
+
+.rules_content {
+    list-style-type: decimal;
+}
+
+.rules_content2 li {
+    list-style-type: lower-alpha;
+    padding: 0px;
+}
+
+
+.rules_container {
+    padding: 100px;
+    background-color: #121212;
+    color: #fff;
+}
+
+.rules_title {
+    font-weight: 700;
+    font-size: 55px;
+    letter-spacing: 1px;
+}
+
+.data_rules,
+.game_info {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+.data_rules {
+    align-items: start;
+}
+
+.game_info {
+    padding-top: 50px;
+    align-items: center;
+}
+
+.data_rules>li {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    font-style: normal;
+    text-align: justify;
+    padding-left: 5em;
+    list-style-type: circle;
+}
+
+.rules_subtitle {
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: -1px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+
+.rules_text {
+    text-indent: 3em;
+}
+
+.allPlay {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    font-style: normal;
+    text-align: justify;
+    list-style-type: circle;
+}
+
+.allPlayCont {
+    padding-left: 100px;
 }
