@@ -122,7 +122,6 @@ header {
     display: flex;
 }
 
-
 .hero_container,
 .about_container,
 .event_container,
@@ -582,7 +581,6 @@ fieldset {
     flex-direction: row;
 }
 
-
 /* Dropdown */
 .dropbtn {
     background-color: #00000000;
@@ -628,7 +626,7 @@ fieldset {
     display: none;
 }
 
-/* Dekstop First */
+/* Desktop First */
 @media screen and (max-width: 768px) {
     h1 {
         text-align: center;
