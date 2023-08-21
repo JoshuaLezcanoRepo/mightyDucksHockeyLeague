@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="That’s Hockey Baby!">
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/style3.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Registration - Mighty Ducks Hockey League</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav_container">
+            <a href="../../index.html"><img src="../images/logoNav.png" alt="Logo MDHL" class="logo">
+            </a>
+            <div class="nav_list">
+                <a href="../../index.html" class="nav_link nav">Home</a>
+                <a href="../../index.html#about" class="nav_link nav">About Us</a>
+                <a href="../../index.html#events" class="nav_link nav">Events</a>
+                <a href="../../index.html#contact" class="nav_link nav">Contact</a>
+                <a href="./rules.html" class="nav_link nav">Rules</a>
+                <a href="./game_info.html" class="nav_link nav">Game Info</a>
+                <a href="#" class="nav_link nav active">Register</a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="bx bx-menu"></i></button>
+                <div class="dropdown-content">
+                    <a href="../../index.html" class="nav_link nav">Home</a>
+                    <a href="../../index.html#about" class="nav_link nav">About Us</a>
+                    <a href="../../index.html#events" class="nav_link nav">Events</a>
+                    <a href="../../index.html#contact" class="nav_link nav">Contact</a>
+                    <a href="./rules.html" class="nav_link nav">Rules</a>
+                    <a href="./game_info.html" class="nav_link nav">Game Info</a>
+                    <a href="#" class="nav_link nav active">Register</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <main>
+        <div class="reg_container" id="rules">
+            <h2 class="reg_title">REGISTER</h2>
+            <div class="container">
+                <form action="./show_data.html" class="form" method="get">
+                    <fieldset class="column">
+                        <div class="input-box">
+                            <label>Player's First Name</label>
+                            <input type="text" placeholder="Enter First Name" name="first_name" required>
+                        </div>
+                        <div class="input-box">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Enter Last Name" name="last_name" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="input-box">
+                        <label>Street Adress</label>
+                        <input type="text" placeholder="Enter Street Adress" name="street_name" required>
+                    </fieldset>
+                    <fieldset class="column">
+                        <div class="input-box">
+                            <label>City</label>
+                            <input type="text" placeholder="Enter City" name="city_name" required>
+                        </div>
+                        <div class="input-box">
+                            <label>Zip Code</label>
+                            <input type="number" placeholder="Enter Zip Code" name="zip_code" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="column">
+                        <div class="input-box">
+                            <label>Birth Date</label>
+                            <input type="date" name="birth" required>
+                        </div>
+                        <div class="check-box">
+                            <label class="title-check-box">Genre:</label>
+                            <label>Male<input type='radio' class="checkLeft" name="genre" value="male" required
+                                    checked></label>
+                            <label>Female<input type='radio' class="checkLeft" name="genre" value="female"></label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="column">
+                        <div class="check-box2">
+                            <label class="title-check-box"><b>Grade:</b></label>
+                            <label><input type='radio' class="checkGrade" name="graded" value="Pre-School" required
+                                    checked>Pre-School</label>
+                            <label><input type='radio' class="checkGrade" name="graded" value="1st">1st</label>
+                            <label><input type='radio' class="checkGrade" name="graded" value="2nd">2nd</label>
+                            <label><input type='radio' class="checkGrade" name="graded" value="3rd">3rd</label>
+                            <label><input type='radio' class="checkGrade" name="graded" value="4th">4th</label>
+                            <label><input type='radio' class="checkGrade" name="graded" value="5th">5th</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="column">
+                        <div class="input-box address">
+                            <label>Which elementary do you live near? Closest's School</label>
+                            <div class="column">
+                                <div class="select-box">
+                                    <select name="school_name">
+                                        <option hidden>Select School</option>
+                                        <option>AJ Katzenmaier</option>
+                                        <option>Greenbay</option>
+                                        <option>Howard A. Yeager</option>
+                                        <option>Marjorie P. Hart</option>
+                                        <option>North Elementary</option>
+                                        <option>South Elementary</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="column">
+                        <div class="check-box">
+                            <label class="title-check-box">What position(s) do you normally play? (check all that
+                                apply)</label>
+                            <div class="dataEstructure">
+                                <div class="check-box-2">
+                                    <label><input type='checkbox' class="checkRight" name="Forward"
+                                            value="Forward" checked>Forward</label>
+                                    <label><input type='checkbox' class="checkRight" name="Defense"
+                                            value="Defense">Defense</label>
+                                </div>
+                                <div class="check-box-2">
+                                    <label><input type='checkbox' class="checkRight" name="Midfield"
+                                            value="Midfield">Midfield</label>
+                                    <label><input type='checkbox' class="checkRight" name="Goalkeeper"
+                                            value="Goalkeeper">Goalkeeper</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="check-box">
+                            <label class="title-check-box">Uniform Size</label>
+                            <div class="dataEstructure">
+                                <div class="check-box-2">
+                                    <label><input type='checkbox' class="checkRight" name="YouthSmall"
+                                            value="Youth Small" checked>Youth Small</label>
+                                    <label><input type='checkbox' class="checkRight" name="YouthMedium"
+                                            value="Youth Medium">Youth Medium</label>
+                                    <label><input type='checkbox' class="checkRight" name="YouthLarge"
+                                            value="Youth Large">Youth Large</label>
+                                    <label><input type='checkbox' class="checkRight" name="Small"
+                                            value="Small">Small</label>
+                                </div>
+                                <div class="check-box-2">
+                                    <label><input type='checkbox' class="checkRight" name="Medium"
+                                            value="Medium">Medium</label>
+                                    <label><input type='checkbox' class="checkRight" name="Large"
+                                            value="Large">Large</label>
+                                    <label><input type='checkbox' class="checkRight" name="Extra-Large"
+                                            value="Extra-Large">Extra-Large</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="longText">
+                        <p class="textReg"><b>Permission to Play</b></p>
+                        <p class="textReg">I, the parent or guardian of the minor registrant, agree that the registrant
+                            and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing
+                            the possibility of physical injury associated with hockey and in consideration for the
+                            "League" accepting the registrant for is hockey programs and activities, I hereby release,
+                            discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and
+                            volunteers, including the facilities user for practices and games, against any claim by or
+                            on behalf on the registrant as a result if the registrant's participation in the
+                            programand/orbeing transported to or from MDHL sponsored activities, which transportation.
+                        </p>
+                        <p class="textReg">By entering my name below, I here by agree and authorize the above. In
+                            addition, by
+                            entering my name below, also acknowledge that I have read the cancellation policy and agree
+                            to its
+                            terms.</p>
+                    </div>
+                    <div class="input-box">
+                        <label>Parent Guardian Signature</label>
+                        <input type="text" placeholder="Enter Signature" name="pg_signature" required>
+                    </div>
+                    <div class="input-box">
+                        <label>Date</label>
+                        <input type="date" name="date_signature" required>
+                    </div>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer_container">
+            <span class="footer_title"><b>© Might Ducks Hockey League</b></span>
+            <span class="footer_subtitle">All Rights Reserved - 2023</span>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="That’s Hockey Baby!">
-    <link rel="icon" href="/src/images/favicon.ico">
-    <link rel="stylesheet" href="/src/css/style3.css">
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/style3.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <title>Game Info - Mighty Ducks Hockey League</title>
 </head>
 
@@ -14,23 +15,36 @@
     <!-- Header -->
     <header>
         <div class="nav_container">
-            <a href="#"><img src="/src/images/logoNav.png" alt="Logo MDHL" class="logo">
+            <a href="../../index.html"><img src="../images/logoNav.png" alt="Logo MDHL" class="logo">
             </a>
             <div class="nav_list">
-                <a href="/index.html" class="nav_link nav">Home</a>
-                <a href="/index.html#about" class="nav_link nav">About Us</a>
-                <a href="/index.html#events" class="nav_link nav">Events</a>
-                <a href="/index.html#contact" class="nav_link nav">Contact</a>
-                <a href="/src/pages/rules.html" class="nav_link nav">Rules</a>
+                <a href="../../index.html" class="nav_link nav">Home</a>
+                <a href="../../index.html#about" class="nav_link nav">About Us</a>
+                <a href="../../index.html#events" class="nav_link nav">Events</a>
+                <a href="../../index.html#contact" class="nav_link nav">Contact</a>
+                <a href="./rules.html" class="nav_link nav">Rules</a>
                 <a href="#" class="nav_link nav active">Game Info</a>
+                <a href="./registration.html" class="nav_link nav">Register</a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="bx bx-menu"></i></button>
+                <div class="dropdown-content">
+                    <a href="../../index.html" class="nav_link nav">Home</a>
+                    <a href="../../index.html#about" class="nav_link nav">About Us</a>
+                    <a href="../../index.html#events" class="nav_link nav">Events</a>
+                    <a href="../../index.html#contact" class="nav_link nav">Contact</a>
+                    <a href="./rules.html" class="nav_link nav">Rules</a>
+                    <a href="#" class="nav_link nav active">Game Info</a>
+                    <a href="./registration.html" class="nav_link nav">Register</a>
+                </div>
             </div>
         </div>
     </header>
     <!-- Main -->
     <main>
-        <div class="rules_container" id="rules">
-            <h2 class="rules_title">Fall Schedule</h2>
-            <p>*All Games take place on Saturday</p>
+        <div class="game_container" id="rules">
+            <h2 class="game_title">Fall Schedule</h2>
+            <p class="sub_rule">*All Games take place on Saturday</p>
             <div class="game_info">
                 <table>
                     <thead>
@@ -103,8 +117,72 @@
                     </p>
                     <div class="contact2">
                         <p><b>Phone:</b> (630) 690-8132</p>
-                        <p><b>Email: </b><a href="mailto:mdhl@chihockey.org" class="nav_link_game">michael.randall@chihockey.org</a></p>
+                        <p><b>Email: </b><a href="mailto:mdhl@chihockey.org"
+                                class="nav_link_game">michael.randall@chihockey.org</a></p>
                     </div>
+                </div>
+            </div>
+            <hr>
+            <div class="maps">
+                <h2 class="rules_title">HOW TO REACH US</h2>
+                <div class="map1">
+                    <div class="mapInfo">
+                        <h3>AJ Katzenmaier</h3>
+                        <p>24 W Walton St<br> Chicago, IL 60610</p>
+                        <p><a href="https://ajk.d187.org/">ajk.d187.org</a> <br> 847-689-6330</p>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.6570185195833!2d-87.63164432441667!3d41.900232764028736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f69da7%3A0x15e198c063fc787c!2sAJ%20Katzenmaier%20Elementary!5e0!3m2!1ses-419!2sar!4v1692280200387!5m2!1ses-419!2sar"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="map1">
+                    <div class="mapInfo">
+                        <h3>Greenbay</h3>
+                        <p>N Orleans St<br> Chicago, IL 60614</p>
+                        <p><a href="https://greenbay.d187.org/">greenbay.d187.org</a> <br> (847) 689-2450</p>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.0227963634543!2d-87.64040842441595!3d41.91386866317469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3407260c45b%3A0xb351205fae50c6f3!2sGreenbay%20Elementary!5e0!3m2!1ses-419!2sar!4v1692281436726!5m2!1ses-419!2sar"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="map1">
+                    <div class="mapInfo">
+                        <h3>Marjorie P Hart</h3>
+                        <p>N Orchard St<br> Chicago, IL 60614</p>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.289654014951!2d-87.6485476244151!3d41.929626862187256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2637f9d7%3A0xdbff5d5dfcfcfa35!2sMarjorie%20P%20Hart%20Elementary!5e0!3m2!1ses-419!2sar!4v1692282015111!5m2!1ses-419!2sar"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="map1">
+                    <div class="mapInfo">
+                        <h3>Howard A Yeager</h3>
+                        <p>1811 Morrow Ave<br> Chicago, IL 60064</p>
+                        <p><a href="https://www.d187.org/">d187.org</a> <br> (847) 689-8150</p>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11801.080246623287!2d-87.8538811!3d42.3154383!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880feccac26b07c5%3A0x8b51fa5d6efe771a!2sHoward%20A.%20Yeager%20School%20(PREK-K)!5e0!3m2!1ses-419!2sar!4v1692281751074!5m2!1ses-419!2sar"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="map1">
+                    <div class="mapInfo">
+                        <h3>North Elementary</h3>
+                        <p>9500 Gave Ave<br> Franklin Park</p>
+                        <p><a href="https://www.d84.org/">d84.org</a> <br> 847-455-4230</p>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94971.47896479748!2d-88.01598072052003!3d41.938887178992424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fb5780ddb9c43%3A0x227feb04cbcf4c4!2sNorth%20Elementary%20School!5e0!3m2!1ses!2sar!4v1692632156330!5m2!1ses!2sar"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="map1">
+                    <div class="mapInfo">
+                        <h3>South Elementary</h3>
+                        <p>1535 Everett Ave<br> Des Plaines</p>
+                        <p><a href="https://south.d62.org/">south.d62.org</a> <br> 847-824-1566</p>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379401.04122084886!2d-88.4957860109375!3d42.020217099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fb7ad3c474b63%3A0x93bdf85af2a839ed!2sSOUTH%20ELEMENTARY%20SCHOOL!5e0!3m2!1ses!2sar!4v1692632390869!5m2!1ses!2sar"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
